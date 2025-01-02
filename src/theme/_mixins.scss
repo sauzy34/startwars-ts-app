@@ -1,0 +1,34 @@
+@use "sass:math";
+
+@mixin small {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin extraLarge {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+// font-size is set to 14 in sync with the body global font size
+@function rem($pixel) {
+  @if math.is-unitless($pixel) {
+    @return math.div($pixel, 14) + rem;
+  } @else {
+    @error 'Don\'t use units when using the rem() function; only numbers.';
+  }
+}

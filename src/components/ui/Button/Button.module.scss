@@ -1,0 +1,19 @@
+@use "@/theme/_mixins" as *;
+
+.btn {
+  all: unset;
+  background-color: var(--primary);
+  color: var(--black);
+  font-size: rem(14);
+  line-height: rem(22);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  transition: 0.2s all;
+
+  &:disabled {
+    background-color: var(--disabled-bg-color);
+    color: var(--disabled-color);
+    cursor: not-allowed;
+  }
+}

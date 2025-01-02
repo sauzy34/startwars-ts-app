@@ -1,0 +1,11 @@
+@use "@/theme/_mixins" as *;
+
+.section {
+  padding: 40px 32px;
+}
+
+@include medium {
+  .section {
+    padding: 20px 16px;
+  }
+}

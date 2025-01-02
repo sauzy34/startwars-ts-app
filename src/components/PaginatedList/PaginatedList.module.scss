@@ -1,0 +1,33 @@
+@use "@/theme/_mixins" as *;
+
+.ul {
+  all: unset;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(20);
+
+  > li {
+    all: unset;
+  }
+}
+
+.paginationBar {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  column-gap: 0.5rem;
+  > button {
+    font-weight: 800;
+  }
+}
+
+@include medium {
+  .ul {
+    grid-template-columns: 1fr;
+  }
+  .paginationBar {
+    > button {
+      font-size: rem(10);
+    }
+  }
+}

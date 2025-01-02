@@ -1,0 +1,8 @@
+@use "@/theme/_mixins" as *;
+
+.cardGroup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-block: 2rem;
+}

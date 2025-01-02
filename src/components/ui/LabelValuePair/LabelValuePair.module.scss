@@ -1,0 +1,13 @@
+.labelValuePair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  .label {
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  .value {
+    word-break: break-word;
+    text-transform: capitalize;
+  }
+}

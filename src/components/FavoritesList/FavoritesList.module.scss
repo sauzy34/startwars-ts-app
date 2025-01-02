@@ -1,0 +1,17 @@
+.cross {
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  padding: 0.5rem;
+}
+
+.card {
+  position: relative;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
